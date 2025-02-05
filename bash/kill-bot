@@ -1,0 +1,7 @@
+#!/bin/bash
+#MATA UM BOT ESPECIFICO
+#read name
+#bot=$(ps aux | grep $name | grep 'Bot.py' | awk '{print $2}'| xargs kill -9)
+#MATA TODOS OS BOTS
+bot=$(ps aux | grep '[p]ython' | grep 'Bot.py' | awk '{print $2}' | xargs kill -9)
+
